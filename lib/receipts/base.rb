@@ -43,13 +43,13 @@ module Receipts
       end
     end
 
-    def header(company: {}, height: 16)
+    def header(company: {}, height: 50)
       logo = company[:logo]
 
       if logo.nil?
         text company.fetch(:name), align: :right, style: :bold, size: 16, color: "4b5563"
       else
-        image load_image(logo), height: height, position: :right
+        image load_image(logo), height: height, position: :left #:right
       end
 
       move_up height
