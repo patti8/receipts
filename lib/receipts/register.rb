@@ -1,5 +1,5 @@
 module Receipts
-  class BuktiPendaftaran < Base
+  class Register < Base
     @title = "Bukti Pendaftaran"
   end
 end
