@@ -43,7 +43,7 @@ module Receipts
       end
     end
 
-    def header(company: {}, height: 70)
+    def header(company: {}, height: 200)
       logo = company[:logo]
 
       if logo.nil?
